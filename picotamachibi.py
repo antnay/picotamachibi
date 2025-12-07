@@ -1,6 +1,6 @@
 # from icons import food_icon
 from machine import I2C, Pin
-from gui.ssd1306 import *
+from ssd1306 import *
 from icon import Animate, Icon, Toolbar, Button, Event, GameState
 from time import sleep
 import framebuf
