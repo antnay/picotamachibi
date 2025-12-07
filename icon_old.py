@@ -539,7 +539,7 @@ class Event:
         if self.timer_ms >= self.timer:
             if self.__callback is not None:
                 print("poop check callback")
-                self.__callback()
+                self.__callback
                 self.timer = -1
                 self.timer_ms = 0
             else:
@@ -567,7 +567,7 @@ class Event:
         """Internal method to handle the timer callback"""
         if self.__callback:
             # print("Timer completed, executing callback.")
-            self.__callback()
+            self.__callback
         else:
             print("Timer complete, but no callback")
         self.done = True

@@ -501,7 +501,7 @@ class Event():
         """ Internal method to handle the timer callback """
         if self.__callback:
 #             print("Timer completed, executing callback.")
-            self.__callback()
+            self.__callback
 #         else:
 #             print("Timer complete, but no callback")
         self.done = True
